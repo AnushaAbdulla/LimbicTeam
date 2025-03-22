@@ -24,7 +24,69 @@ The objectives of this challenge include:
 
 ## Methodology
 1. **Exploratory Data Analysis**:  
-   - 
+
+We used the primary datasets provided by the WiDS Datathon on Kaggle. Information about them is listed below:
+
+#### **Training Solutions**
+- Contains the targets (ADHD diagnosis and sex).
+  - **ADHD Diagnosis**: A binary classification (`1= ADHD, 0 = No ADHD`).
+  - **Sex**: A binary classification (`1 = Female, 0 = Male`).
+
+#### **fMRI Connectome Matrices**
+- Contains approximately 19,900 features, representing the activity measured across about 200 brain regions.
+
+#### **Categorical Metadata**
+- Descriptive data, including variables such as:
+  - Race
+  - Ethnicity
+  - Parent's level of education
+  - Parent's occupation
+
+#### **Quantitative Metadata**
+- Numerical data collected from various questionnaires, including:
+  - Age
+  - Color vision
+  - Parenting measures
+  - Emotional well-being measures.
+
+
+### **Data Exploration**
+To begin the analysis, we loaded all the provided datasets and merged them into a single dataset named `train_data`, which consisted of 9 rows and 19,929 columns. This consolidated dataset formed the basis for all subsequent exploratory data analysis (EDA). Key steps in EDA included:
+
+1. **Target Distribution Analysis**:
+   - **ADHD Outcome**: 
+     - A pie chart was created to examine the distribution of ADHD diagnoses within the dataset.
+     - Results indicated that 831 participants were diagnosed with ADHD, while 382 were not.
+   - **Sex Distribution**:
+     - A similar analysis was performed for the `Sex_F` variable, which revealed that 797 participants were male (`Sex_F: 0`) and 416 participants were female (`Sex_F: 1`).
+   - **Combined Analysis**:
+     - A bar plot was generated to visualize ADHD outcomes across sexes. The plot revealed that males were more likely to have ADHD in this dataset, with 581 males and 250 females diagnosed.
+
+2. **Feature Correlation**:
+   - Correlation matrices were created for quantitative and categorical metadata to identify relationships and dependencies between features.
+   - This step provided insights into feature importance and the degree of interaction among variables.
+   - Correlation Matrices Included Below
+
+3. **Dimensionality Reduction**:
+   - Principal Component Analysis (PCA) was applied to the fMRI data, which contains approximately 19,900 features representing activity across 200 brain regions.
+   - This allowed for visual exploration and reduction of high-dimensional data, ensuring better understanding and improved model input processing.
+
+### **Challenges**
+
+1. **Missing Data**:
+   - In the training dataset, we observed:
+     - `MRI_Track_Age_at_Scan` had 360 missing values.
+     - `PreInt_Demos_Fam_Child_Ethnicity` had 11 missing values.
+   - Missing values were addressed using median imputation, which replaces missing values with the median of the respective columns. This approach is effective for numerical data as it is robust to outliers.
+   The testing dataset exhibited more missing columns than the training dataset, which indicates some mismatch in the distribution properties between the training and testing datasets.
+
+2. **Imbalanced Data**:
+   - The dataset showed imbalanced distributions for both target variables in both the training and testing dataset:
+     - Males were more prone to ADHD compared to females, as reflected in the dataset.
+   - This imbalance introduces potential bias into the model and requires careful handling during model training and evaluation.
+
+These combined exploration and preprocessing steps ensured the dataset was clean, consistent, and ready for subsequent model development and evaluation.
+
 
 2. **Data Preparation**:  
    - 
