@@ -1,4 +1,4 @@
-# Limbic Kagle
+# Team Limbic - BTT Kaggle Competition
 
 **Project Overview**  
 
