@@ -29,7 +29,7 @@
 
 ## Individual Contributions
 - **Anusha Shakir Abdulla**: 
-
+- **Bhanavi Senthil**: 
 
 ## Contact
 For questions or collaboration, reach out to the team:  
@@ -38,4 +38,6 @@ Anusha:
  - [**GitHub**](https://github.com/AnushaAbdulla)
  - [**LinkedIn**](https://www.linkedin.com/in/AnushaAbdulla)
 
-
+Bhanavi:
+ - [**GitHub**](https://github.com/navi1121)
+ - [**LinkedIn**](https://www.linkedin.com/in/bhanavisenthil/)
