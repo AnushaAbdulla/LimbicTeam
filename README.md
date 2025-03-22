@@ -63,13 +63,16 @@ To begin the analysis, we loaded all the provided datasets and merged them into 
      - A bar plot was generated to visualize ADHD outcomes across sexes. The plot revealed that males were more likely to have ADHD in this dataset, with 581 males and 250 females diagnosed.
 
 2. **Feature Correlation**:
-   - Correlation matrices were created for quantitative and categorical metadata to identify relationships and dependencies between features.
+   - Correlation matrices were created for quantitative and categorical metadata to identify relationships and dependencies between features and ADHD_Outcome.
+   - Feature correlations were created to investigate the relationship between the features of the metadata and the target variable Sex_F
    - This step provided insights into feature importance and the degree of interaction among variables.
-   - Correlation Matrices Included Below
+
 
 3. **Dimensionality Reduction**:
    - Principal Component Analysis (PCA) was applied to the fMRI data, which contains approximately 19,900 features representing activity across 200 brain regions.
    - This allowed for visual exploration and reduction of high-dimensional data, ensuring better understanding and improved model input processing.
+
+   Graphs included in the [Visualizations](https://github.com/AnushaAbdulla/LimbicTeam?tab=readme-ov-file#visualizations) section below
 
 ### **Challenges**
 
@@ -100,7 +103,23 @@ These combined exploration and preprocessing steps ensured the dataset was clean
 ## Results and Key Findings
 - 
 ## Visualizations
-- 
+### Dataset Distribution    
+![DistOfADHDOutcome](https://i.imgur.com/zRNiqkq.png)  
+![DistGenderOutcome](https://i.imgur.com/eZhALQp.png)  
+![ADHDOutcomeBySex](https://i.imgur.com/v4kJNaG.png)  
+
+### Correlation graphs  
+Quantitative metadata graphs
+![Quant Correlation Matrix Heatmap for ADHD Outcome](https://i.imgur.com/9me6LaM.png)  
+![Quant Feature SexF](https://i.imgur.com/6ArzssT.png)  
+
+
+Categorical metadata graphs
+![corrmatrix](https://i.imgur.com/812xbjM.png)
+![corrfeaturegraph](https://i.imgur.com/o8bkwWH.png)
+
+### PCA Graph
+![pcagraph](https://i.imgur.com/U6zIH1W.png)
 
 ## Potential Next Steps
 1.   
