@@ -126,7 +126,8 @@ Categorical metadata graphs
 
 ## Individual Contributions
 - **Anusha Shakir Abdulla**: 
-- **Bhanavi Senthil**: 
+- **Bhanavi Senthil**:
+- **Tina Tran**:
 
 ## Contact
 For questions or collaboration, reach out to the team:  
@@ -138,3 +139,7 @@ Anusha:
 Bhanavi:
  - [**GitHub**](https://github.com/navi1121)
  - [**LinkedIn**](https://www.linkedin.com/in/bhanavisenthil/)
+
+Tina:
+ - [**GitHub**](https://github.com/TTrumpet)
+ - [**LinkedIn**](https://www.linkedin.com/in/tinaungtran/)
