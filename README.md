@@ -128,6 +128,7 @@ Categorical metadata graphs
 - **Anusha Shakir Abdulla**: 
 - **Bhanavi Senthil**:
 - **Tina Tran**:
+- **Sruti Karthikeyan**:
 
 ## Contact
 For questions or collaboration, reach out to the team:  
@@ -143,3 +144,7 @@ Bhanavi:
 Tina:
  - [**GitHub**](https://github.com/TTrumpet)
  - [**LinkedIn**](https://www.linkedin.com/in/tinaungtran/)
+
+Sruti Karthikeyan:
+ - [**GitHub**](https://github.com/srutiswathi)
+ - [**LinkedIn**](https://www.linkedin.com/in/sruti-karthikeyan)
