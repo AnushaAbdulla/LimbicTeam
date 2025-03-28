@@ -92,16 +92,42 @@ These combined exploration and preprocessing steps ensured the dataset was clean
 
 
 2. **Data Preparation**:  
-   - 
+   - Performed data cleaning e.g. filled null values in PreInt_Demos_Fam_Child_Ethnicity and MRI_Track_Age_at_Scan
+   - Adjused for skewness of MRI_Track_Age_at_Scan
+   - Used z-scores to find and remove outliers from data
+   - Filtered out rows outide of 1.5 IQR
+   - Checked for imbalance between ADHD diagnosis and gender identification, then adjusted the scale and weights
 
 3. **Model Development**:  
-   - 
+   - Multi-output models are designed to handle prediction tasks where there are multiple target variables simultaneously. MultiOutputClassifier: used for multi-target classification, trains one classifier per target.
+   - Logistic regression is primarily used for classification problems. It estimates the probability that an instance belongs to a particular class. The core of this algorithm is the sigmoid function (logistic function) which transforms a linear combination of input features into a probability value (0-1). The model's coefficients are typically esitmated using maximum likelihood estimation to maximize the likelihood of observing the given data.
 
 4. **Evaluation**:  
-   - 
+   | Baseline Model | ADHD Diagnosis Accuracy (%) | Gender Prediction Accuracy (%) | Total Accuracy (%)
+   | --- | --- | --- | --- |
+   | Multi-output Logistic Regression | 73 | 76 | 56 |
+   
+   | Multi-output Logistic Regression Hyperparameters (solver, penalty) | ADHD Diagnosis Accuracy (%) | Gender Prediction Accuracy (%) | Total Accuracy (%) |
+   | --- | --- | --- | --- |
+   | newton-cg & l2 | 80 | 77 | 61 |
+   | newton-cg & None | 79 | 79 | 61 |
+   | lbfgs & l2 | 79 | 77 | 60 |
+   | lbfgs & None | 78 | 74 | 58 |
+   | sag & l2 | 80 | 70 | 57 |
+   | sag & None | 80 | 70 | 57 |
+   | newton-cholesky & l2 | 79 | 77 | 61 |
+   | newton-cholesky & None | 78 | 74 | 58 |
+   | saga & l1 | 80 | 70 | 58 |
+   | saga & l2 | 80 | 72 | 59 |
+   | saga & elasticnet (l1_ratio = 0.5) | 80 | 70 | 58 |
+   | saga & None | 80 | 71 | 58 |
+   | liblinear & l1 | 81 | 70 | 58 |
+   | liblinear & l2 | 79 | 77 | 60 |
+    
 
 ## Results and Key Findings
-- 
+- We found that using a Multi-Output model while intializing each classifier as a different specialized model worked the best.
+
 ## Visualizations
 ### Dataset Distribution    
 ![DistOfADHDOutcome](https://i.imgur.com/zRNiqkq.png)  
@@ -122,12 +148,12 @@ Categorical metadata graphs
 ![pcagraph](https://i.imgur.com/U6zIH1W.png)
 
 ## Potential Next Steps
-1.   
+1.   Implement neural network architecture. This architecture has a better chance for accuracy growth given time. Current total accuracy using a simple neural network model is 51%.
 
 ## Individual Contributions
 - **Anusha Shakir Abdulla**: 
 - **Bhanavi Senthil**:
-- **Tina Tran**:
+- **Tina Tran**: Worked on Multi-Output model and Logistic Regression research and implementation.
 - **Sruti Karthikeyan**:
 
 ## Contact
