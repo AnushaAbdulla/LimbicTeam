@@ -150,12 +150,6 @@ Categorical metadata graphs
 ## Potential Next Steps
 1.   Implement neural network architecture. This architecture has a better chance for accuracy growth given time. Current total accuracy using a simple neural network model is 51%.
 
-## Individual Contributions
-- **Anusha Shakir Abdulla**: 
-- **Bhanavi Senthil**:
-- **Tina Tran**: Worked on Multi-Output model and Logistic Regression research and implementation.
-- **Sruti Karthikeyan**:
-
 ## Contact
 For questions or collaboration, reach out to the team:  
 
